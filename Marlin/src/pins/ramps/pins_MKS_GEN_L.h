@@ -22,7 +22,7 @@
 #pragma once
 
 /**
- * This File has been heavily modified to make marlin work with Climber 7
+ * This File has been modified to make marlin work with Climber 7
  * MKS GEN L – Arduino Mega2560 with RAMPS v1.4 pin assignments
  */
 
