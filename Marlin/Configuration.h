@@ -350,9 +350,9 @@
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
 // For the other hotends it is their distance from the extruder 0 hotend.
-#define HOTEND_OFFSET_X { 0.0, 264.00 } // (mm) relative X-offset for each nozzle
-#define HOTEND_OFFSET_Y { 0.0, 1.00 }  // (mm) relative Y-offset for each nozzle
-#define HOTEND_OFFSET_Z { 0.0, -0.25 }  // (mm) relative Z-offset for each nozzle
+#define HOTEND_OFFSET_X { 0.0, 263.2 } // (mm) relative X-offset for each nozzle
+#define HOTEND_OFFSET_Y { 0.0, 0.80 }  // (mm) relative Y-offset for each nozzle
+#define HOTEND_OFFSET_Z { 0.0, -0.27 }  // (mm) relative Z-offset for each nozzle
 
 // @section machine
 
@@ -1871,7 +1871,7 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  #define NOZZLE_PARK_POINT { (X_MIN_POS + 25), (Y_MAX_POS - 25), 20 }
+  #define NOZZLE_PARK_POINT { (X_MIN_POS + 55), (Y_MAX_POS - 25), 20 }
   //#define NOZZLE_PARK_X_ONLY          // X move only is required to park
   //#define NOZZLE_PARK_Y_ONLY          // Y move only is required to park
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
