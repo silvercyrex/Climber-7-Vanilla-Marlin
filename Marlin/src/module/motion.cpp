@@ -1204,8 +1204,8 @@ FORCE_INLINE void segment_idle(millis_t &next_idle_ms) {
             if (dual_x_carriage_mode == DXC_DUPLICATION_MODE)
              new_pos.x = x0_pos + duplicate_extruder_x_offset;
             else
-             new_pos.x = _MIN(X_BED_SIZE - x0_pos, X_MAX_POS);
-
+             new_pos.x = _MIN(X_BED_SIZE - x0_pos, X2_MAX_POS);
+             
             // Move duplicate extruder into the correct position
             if (DEBUGGING(LEVELING)) DEBUG_ECHOLNPAIR("Set planner X", inactive_extruder_x, " ... Line to X", new_pos.x);
             if (!planner.buffer_line(new_pos, planner.settings.max_feedrate_mm_s[X_AXIS], 1)) break;
